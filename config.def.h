@@ -6,6 +6,7 @@ static const char *colorname[NUMCOLS] = {
     [BACKGROUND] = "white",
 	[INIT] =   "2d2d2d",     /* after initialization */
 	[INPUT] =  "#005577",   /* during input */
+	[INPUT_ALT] = "#227799", /* during input, second color */
 	[FAILED] = "#CC3333",   /* wrong password */
 };
 
@@ -16,6 +17,7 @@ ResourcePref resources[] = {
 		{ "background",       STRING,  &colorname[BACKGROUND] },
 		{ "init",             STRING,  &colorname[INIT] },
 		{ "input",            STRING,  &colorname[INPUT] },
+		{ "inputalt",         STRING,  &colorname[INPUT_ALT] },
 		{ "failed",           STRING,  &colorname[FAILED] },
 };
 
